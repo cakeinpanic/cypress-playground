@@ -1,0 +1,23 @@
+{
+  "name": "cypress-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open:local": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cakeinpanic/cypress-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cakeinpanic/cypress-playground/issues"
+  },
+  "homepage": "https://github.com/cakeinpanic/cypress-playground#readme",
+  "devDependencies": {
+    "cypress": "^9.2.0",
+    "typescript": "^4.5.4"
+  }
+}
