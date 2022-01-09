@@ -1,2 +1,8 @@
 .idea
 node_modules
+data
+allure
+allure-results
+cypress/videos
+cypress/screenshots
+
