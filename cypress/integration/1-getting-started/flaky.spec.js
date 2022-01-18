@@ -7,7 +7,7 @@ describe('flaky describe', () => {
   })
 
   it('flaky test failing in 66% of cases', () => {
-    const max = 4
+    const max = 3
     const min = 2
     const lengthToCompare =  Math.floor(Math.random() * (max - min + 1)) + min;
     cy.get('.todo-list li').should('have.length', lengthToCompare)

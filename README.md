@@ -35,3 +35,6 @@ Tool to collect and analyze test statistics
 * run `npm run run:local:allure`
 * run `allure-docker:start` and observe results 
 
+
+### Links
+[Parallelizing Cypress with Jenkins, AWS, and Sorry-Cypress](https://medium.com/geekculture/parallelizing-cypress-with-jenkins-aws-and-sorry-cypress-8241331fe50f)
