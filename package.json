@@ -9,8 +9,9 @@
     "run:cypress-dashboard": "export $(cat .env | xargs) && CYPRESS_API_URL=\"https://api.cypress.io\" cy2 run --config-file cypress.cypress-dashboard.json --record --key $CYPRESS_DASHBOARD_RECORD_KEY",
     "run:currents": "export $(cat .env | xargs) && CYPRESS_API_URL=\"https://cy.currents.dev/\" cy2 run --config-file cypress.currents.json --parallel --record --key $CURRENTS_RECORD_KEY --ci-build-id $(date +%s)",
 
-    "sorry-docker:start": "docker-compose -f docker-compose.sorry.yaml up",
+    "sorry-docker:start": "docker-compose -f docker-compose.sorry.yaml up -d && npm run sorry-report:open",
     "run:sorry-cypress": "CYPRESS_API_URL=\"http://localhost:1234/\" cy2 run --config-file cypress.sorry-cypress.json  --parallel --record --key somekey --ci-build-id hello-cypress-2",
+    "sorry-report:open" : "/usr/bin/open -a \"/Applications/Google Chrome.app\" http://localhost:8080/",
 
     "run:local:allure": "npx cypress run --config-file cypress.allure.json --env allure=true",
     "allure-docker:start": "docker-compose -f docker-compose.allure.yaml up -d && npm run allure-report:open",
